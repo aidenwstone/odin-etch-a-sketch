@@ -2,9 +2,19 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+header {
+    background-color: bisque;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
+    padding: 50px;
+}
+
+footer {
+    background-color: bisque;
 }
 
 .tile {
