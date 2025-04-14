@@ -30,7 +30,6 @@ main {
     border: 0.1px solid black;
     box-sizing: border-box;
     flex: 1 1 calc(100% / 16);
-    aspect-ratio: 1;
 }
 
 footer {
