@@ -9,6 +9,7 @@ body {
 }
 
 header {
+    text-align: center;
     background-color: bisque;
     padding: 0px 10px;
 }
@@ -33,5 +34,6 @@ main {
 }
 
 footer {
+    text-align: center;
     background-color: bisque;
 }
