@@ -18,6 +18,10 @@ header {
     padding: 20px 0 0;
 }
 
+button {
+    padding: 10px 50px;
+}
+
 .grid-container {
     padding: 20px;
     display: flex;
