@@ -14,7 +14,7 @@ header {
 }
 
 .grid-container {
-    padding: 50px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     flex: 1;
