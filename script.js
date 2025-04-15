@@ -7,6 +7,8 @@ function colorTile(e) {
 
 function createGrid(squaresPerSide) {
     let gridSize = squaresPerSide ** 2;
+
+    container.innerHTML = "";
     for (let i = 0; i < gridSize; i++) {
         let tile = document.createElement("div");
         tile.classList.add("tile");
