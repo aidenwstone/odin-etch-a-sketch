@@ -13,6 +13,11 @@ header {
     background-color: bisque;
 }
 
+.button-container {
+    text-align: center;
+    padding: 20px 0 0;
+}
+
 .grid-container {
     padding: 20px;
     display: flex;
