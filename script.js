@@ -12,6 +12,7 @@ function createGrid(squaresPerSide) {
         tile.classList.add("tile");
         container.appendChild(tile);
         tile.addEventListener("mouseenter", colorTile);
+        tile.style.cssText += `flex-basis: calc(100% / ${squaresPerSide})`;
     }
 }
 
