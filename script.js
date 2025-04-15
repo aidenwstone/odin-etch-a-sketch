@@ -1,4 +1,4 @@
-const container = document.querySelector(".container");
+const container = document.querySelector(".grid");
 
 function colorTile(e) {
     let tile = e.target;

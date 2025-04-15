@@ -20,7 +20,7 @@ main {
     flex: 1;
 }
 
-.container {
+.grid {
     display: flex;
     flex-wrap: wrap;
     aspect-ratio: 1;
