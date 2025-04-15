@@ -5,10 +5,15 @@ function colorTile(e) {
     tile.style.backgroundColor = "black";
 }
 
-let gridSize = 16 * 16
-for (let i = 0; i < gridSize; i++) {
-    let tile = document.createElement("div");
-    tile.classList.add("tile");
-    container.appendChild(tile);
-    tile.addEventListener("mouseenter", colorTile);
+function createGrid(squaresPerSide) {
+    let gridSize = squaresPerSide ** 2;
+    for (let i = 0; i < gridSize; i++) {
+        let tile = document.createElement("div");
+        tile.classList.add("tile");
+        container.appendChild(tile);
+        tile.addEventListener("mouseenter", colorTile);
+    }
 }
+
+// Run intial grid creation
+createGrid(16);
