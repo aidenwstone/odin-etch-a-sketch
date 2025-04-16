@@ -1,4 +1,5 @@
 const container = document.querySelector(".grid");
+const newGridButton = document.getElementById("newGrid");
 
 function colorTile(e) {
     let tile = e.target;
@@ -17,6 +18,16 @@ function createGrid(squaresPerSide) {
         tile.style.cssText += `flex-basis: calc(100% / ${squaresPerSide})`;
     }
 }
+
+newGridButton.addEventListener("click", () => {
+    let size = parseInt(prompt("Enter the number of squares per side: "));
+
+    while (Number.isNaN(size) || size < 1 || size > 100) {
+        alert("Invalid, must be number from 1-100.");
+        size = parseInt(prompt("Enter the number of squares per side: "));
+    }
+    createGrid(size);
+})
 
 // Run intial grid creation
 createGrid(16);
